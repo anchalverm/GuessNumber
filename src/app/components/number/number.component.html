@@ -1,0 +1,12 @@
+<div class="container">
+    <div class="container fluid top-margin">
+        <h1> Number Game </h1>
+    <button type="submit" class="btn btn-primary btn-purple" (click) ="generateNumber()"> Generate random number</button>
+    <form #userNumber="ngForm" (ngSubmit)="onClickSubmit(userNumber.value)"> 
+        <input type="text" name="usernumber" placeholder="please Enter a number" ngModel> 
+        <br/> 
+        <br/> 
+        <input type="submit" value="submit"> 
+     </form>
+     </div>
+</div>
